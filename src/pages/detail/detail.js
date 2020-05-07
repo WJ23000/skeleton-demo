@@ -1,5 +1,8 @@
+import { TextMixins } from '@/mixins/TextMixins';
+
 export default {
     name: 'Detail',
+    mixins: [TextMixins],
     components: {
 
     },
