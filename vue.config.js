@@ -2,6 +2,7 @@ const path = require('path')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
  
 module.exports = {
+  publicPath: './', // 解决打包后找不到资源路径
   configureWebpack: (config) => {
     config.plugins.push(new SkeletonWebpackPlugin({
       webpackConfig: {
