@@ -34,51 +34,42 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-### docker命令说明
+# docker命令说明
+
+## 镜像篇
 ```
-安装docker
+1.  获取指定镜像：docker pull nginx
+
+2.  查看镜像列表：docker images 
+
+3.  删除指定镜像：docker images rm nginx
+
+4.  创建镜像：docker build -t xxx .
+    xxx：是刚刚创建的镜像名称
 ```
 
+## 容器篇
 ```
-获取指定镜像 docker pull nginx
-```
+1.  启动容器：docker run -d --name xx -p 8080:80 xxx
+    -d：代表后台启动
+    --name xx：这是创建的容器名称
+    -p 8080:80: 是将nginx的80映射到你服务器的8080端口(注意你服务器的端口是否开放8080，其他端口也可以)
+    xxx：是刚刚创建的镜像名称
+    注意：文件夹路径定位到项目的根目录下
 
-```
-查看镜像列表 docker images
-```
+2.  浏览器运行http://localhost:8080或http://本地ip地址:8080成功打开部署的项目
 
-```
-删除指定镜像 docker images rm nginx
-```
+3.  终止启动中的容器：docker container stop xxx
+    xxx: 容器名
 
-```
-创建镜像 docker build -t xxx .
-xxx：是刚刚创建的镜像名称
-```
+4.  删除指定容器：docker container rm xxx
+    xxx: 容器名
 
-```
-启动容器 docker run -d --name xx -p 8080:80 xxx
--d：代表后台启动
---name xx：这是创建的容器名称
--p 8080:80: 是将nginx的80映射到你服务器的8080端口(注意你服务器的端口是否开放8080，其他端口也可以)
-xxx：是刚刚创建的镜像名称
-注意：文件夹路径定位到项目的根目录下
-```
+5.  查看容器列表：docker ps -a
 
-```
-浏览器运行http://localhost:8080成功打开部署的项目
-或http://本地ip地址:8080
-```
+6.  查看指定容器中的文件/文件夹：docker exec -it containerID /bin/bash
+    containerID： 容器id
 
-```
-查看容器列表 docker ps
-```
-
-```
-查看指定容器中的文件/文件夹 docker exec -it containerID /bin/bash
-containerID： 容器id
-```
-
-```
-ls 打开指定文件夹 exit 退出ls模式
+7.  打开指定文件夹：ls
+    退出终端：exit或者Ctrl+d
 ```
