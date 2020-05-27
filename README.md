@@ -42,20 +42,21 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 2.  查看镜像列表：docker images 
 
-3.  删除指定镜像：docker images rm nginx
+3.  删除指定镜像：docker images rm xxx
+    xxx：镜像名称
 
 4.  创建镜像：docker build -t xxx .
-    xxx：是刚刚创建的镜像名称
+    xxx：镜像名称
+    注意：文件夹路径定位到项目的根目录下
 ```
 
 ## 容器篇
 ```
-1.  启动容器：docker run -d --name xx -p 8080:80 xxx
+1.  新建&&启动容器：docker run -d --name xx -p 8080:80 xxx
     -d：代表后台启动
     --name xx：这是创建的容器名称
     -p 8080:80: 是将nginx的80映射到你服务器的8080端口(注意你服务器的端口是否开放8080，其他端口也可以)
     xxx：是刚刚创建的镜像名称
-    注意：文件夹路径定位到项目的根目录下
 
 2.  浏览器运行http://localhost:8080或http://本地ip地址:8080成功打开部署的项目
 
@@ -67,7 +68,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 5.  查看容器列表：docker ps -a
 
-6.  查看指定容器中的文件/文件夹：docker exec -it containerID /bin/bash
+6.  查看指定容器并打开bash终端：docker exec -it containerID /bin/bash
     containerID： 容器id
 
 7.  打开指定文件夹：ls
