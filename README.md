@@ -64,12 +64,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     xxx: 容器名或者容器id前三位
 
 4.  删除指定容器：docker container rm xxx
-    xxx: 容器名或者容器id前三位
+    xxx: 容器名或者容器id前三位(删除容器前先终止启动中的容器)
 
 5.  查看容器列表：docker ps -a
 
-6.  查看指定容器并打开bash终端：docker exec -it containerID /bin/bash
-    containerID： 容器id(可以使用id前三位)
+6.  查看指定容器并打开bash终端：docker exec -it xxx /bin/bash
+    xxx：容器名或者容器id前三位
 
 7.  查看当前目录中所有文件：ls
     进入指定文件夹目录：cd
