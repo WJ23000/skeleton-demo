@@ -40,7 +40,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 1.  获取指定镜像：docker pull nginx
 
-2.  查看镜像列表：docker images i
+2.  查看镜像列表：docker images
 
 3.  删除指定镜像：docker rmi xxx
     xxx：镜像名称
