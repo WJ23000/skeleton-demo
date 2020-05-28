@@ -40,9 +40,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 1.  获取指定镜像：docker pull nginx
 
-2.  查看镜像列表：docker images 
+2.  查看镜像列表：docker images i
 
-3.  删除指定镜像：docker images rm xxx
+3.  删除指定镜像：docker rmi xxx
     xxx：镜像名称
 
 4.  创建镜像：docker build -t xxx .
@@ -69,7 +69,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 5.  查看容器列表：docker ps -a
 
 6.  查看指定容器并打开bash终端：docker exec -it containerID /bin/bash
-    containerID： 容器id
+    containerID： 容器id(可以使用id前三位)
 
 7.  打开指定文件夹：ls
     退出终端：exit或者Ctrl+d
