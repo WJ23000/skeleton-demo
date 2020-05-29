@@ -10,11 +10,11 @@
 
 3.  本地退出docker hub：docker logout
 
-4.  本地镜像重命名：docker tag xxx 账号/xxx
-    xxx: 镜像名
+4.  本地镜像重命名：docker tag xxx new/xxx
+    new/xxx: 新镜像名(new对应区域地址)
 
-5.  上传镜像到docker hub：docker push 账号/xxx
-    xxx: 镜像名
+5.  上传镜像到docker hub：docker push new/xxx
+    new/xxx: 新镜像名(new对应区域地址)
 
 6.  浏览器登录docker hub查看已上传的镜像
 ```
