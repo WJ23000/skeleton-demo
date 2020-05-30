@@ -65,4 +65,4 @@
 ```
 
 ### 学习资料
-See [Configuration Reference](https://yeasy.gitbook.io/docker_practice/).
+See [https://yeasy.gitbook.io/docker_practice/](https://yeasy.gitbook.io/docker_practice/).
