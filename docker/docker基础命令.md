@@ -8,8 +8,9 @@
 
 3.  查看镜像列表：docker images --all
 
-5.  删除指定镜像：docker rmi xxx
+5.  删除指定镜像：docker rmi xxx:latest
     xxx：镜像名或者镜像id前三位(先删除相关联的容器)
+    latest：版本号
 
 5.  创建镜像：docker build -t xxx .
     xxx：镜像名
