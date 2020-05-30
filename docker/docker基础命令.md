@@ -63,3 +63,6 @@
 
 2.  使用build打包当前项目
 ```
+
+### 学习资料
+See [Configuration Reference](https://yeasy.gitbook.io/docker_practice/).
