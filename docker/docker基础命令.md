@@ -1,5 +1,12 @@
 # docker命令说明
 
+## 基础篇
+```
+1.  查看docker版本号：docker -v
+
+2.  查看docker安装位置：where docker
+```
+
 ## 镜像篇
 ```
 1.  查找指定镜像：docker search nginx
@@ -55,6 +62,7 @@
     删除文件夹：rm -r xxx(xxx文件夹名，-r会删除文件夹中所有的文件)
     清屏：reset
     退出终端：exit或者Ctrl+d
+    查看指定文件：tail -f xxx(xxx文件名，-f循环读取)
 ```
 
 ## 注意
