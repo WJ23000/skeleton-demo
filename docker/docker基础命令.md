@@ -52,7 +52,9 @@
     xxx：容器名或者容器id前三位
     /bin/bash: 打开shell终端
 
-9.  查看当前目录中所有文件：ls
+9.  查看容器日志：docker attach [options] xxx
+    xxx：容器名或者容器id前三位
+10. 查看当前目录中所有文件：ls
     进入指定文件夹目录：cd
     返回上级文件夹目录：cd ..(cd和..之间有一个空格)
     打印工作路径：pwd
